@@ -1,0 +1,23 @@
+<div class="context-column" fxLayout="column">
+  <form [formGroup]="demoForm">
+    <div formArrayName="demoArray" class="context-row" *ngFor="let item of insightItems">
+      <input type="checkbox" kendoCheckBox [id]="item.Id" />
+      <label class="k-checkbox-label" [for]="item.Id">{{ item.Name }}</label>
+
+      <div class="context-controls">
+        <label>
+          <input type="radio" [name]="item.Id" value="line" checked />
+          <i class="fa fa-line-chart" style="font-size:20px; margin-left: 5px; margin-right: 5px;"></i>
+        </label>
+        <label>
+          <input type="radio" [name]="item.Id" value="bar" />
+          <i class="fa fa-bar-chart" style="font-size:20px; margin-left: 5px;  margin-right: 5px;"></i>
+        </label>
+        <kendo-colorpicker class="color-picker" [view]="'palette'" [format]="'hex'" [paletteSettings]="settings"
+          [value]="selected" (valueChange)="onChange($event, item.Id)">
+        </kendo-colorpicker>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- <p> {{demoForm | json}}</p> -->

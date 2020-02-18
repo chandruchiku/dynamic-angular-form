@@ -1,0 +1,39 @@
+.context-column {
+    width: 350px;
+    background: #6d696b;
+    color:white;
+}
+.context-row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}
+.k-checkbox-label {
+    margin-left: 10px;
+}
+.context-controls {
+    float: right;
+}
+.color-picker {
+    width: 50px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + i {
+    cursor: pointer;
+  }
+  
+/* CHECKED STYLES */
+[type=radio]:checked + i {
+    color:#FF5733;
+}
