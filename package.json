@@ -26,7 +26,7 @@
     "@progress/kendo-angular-popup": "^3.0.0",
     "@progress/kendo-drawing": "^1.5.12",
     "@progress/kendo-theme-default": "latest",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs-plugin-dragdata": "^1.1.1",
     "font-awesome": "^4.7.0",
     "ng2-charts": "^2.3.0",
